@@ -1,0 +1,8 @@
+@EndUserText.label: 'Access Control'
+@MappingRole: true
+define role ZAC_AIRPORT_3_0631 {
+    grant select on ZCDS_AIRPORT_3_0631
+                where inheriting conditions from entity ZCDS_AIRPORT_2_0631
+                AND AirportId = 'MUC';
+                        
+}
